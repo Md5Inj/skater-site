@@ -1,0 +1,135 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	font-family: 'Roboto Slab', serif;
+}
+
+#all {
+	display: flex;
+	flex-direction: column;
+}
+
+#logo {
+	min-width: 7vw;
+	min-height: 7vw;
+	background: url('../img/logo.png');
+	background-size: cover;
+	transition: 0.5s;
+}
+
+#logo:hover {
+	opacity: 0.5;
+}
+
+#head {
+	z-index: 999;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	transition: 0.5s;
+}
+
+#menu {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.fa-vk {
+	background-color:#375474;
+	border-radius:50%;
+}
+
+.fa-youtube-square {
+	background-color: #b91f1f;
+	border-radius: 50%;
+}
+
+.fa {
+	color:white;
+}
+
+i {
+	padding:10px;
+	margin-left: 1%;
+	transition: 0.5s;
+}
+
+i:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.flickerplate ul.flicks>li{
+	background-position: top !important;
+}
+
+#quotes {
+	min-width: 100%;
+	min-height: 100vh;
+	background-image: url("../img/Fon.jpg");
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.quote {
+	max-width: 40%;
+	margin-left: 2%;
+	margin-top: 1%;
+	background-color: white;
+	padding: 10px;
+}
+
+.quote p {
+	margin: 0;
+	text-align: center;
+}
+
+#slider-wrap {
+	display: flex;
+}
+
+.quote {
+	position: relative;
+	background: #d5d5d5;
+	border: 3px solid white;
+	border-radius: 5px;
+}
+
+.quote:after, .quote:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.quote:after {
+	border-color: rgba(213, 213, 213, 0);
+	border-left-color: #d5d5d5;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.quote:before {
+	border-color: rgba(56, 100, 245, 0);
+	border-left-color: white;
+	border-width: 34px;
+	margin-top: -34px;
+}

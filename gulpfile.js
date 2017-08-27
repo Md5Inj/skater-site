@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     reload = browserSync.reload;
 
 var path = {
-    build: {
+    build: { 
         html: 'build/',
         js: 'build/js/',
         css: 'build/style/',
