@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#slider").flicker()}),$(document).scroll(function(){0!=window.pageYOffset?$("#head").css("background-color","black"):$("#head").css("background-color","rgba(0, 0, 0, 0.5)")});
